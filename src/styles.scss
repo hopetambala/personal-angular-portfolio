@@ -15,8 +15,20 @@ $brand-tertiary:#143730;
 
 html{
     h1{ 
-        font-family: Jura; 
+        //font-family: Jura; 
+        font-family: Montserrat;
         font-size: 24px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 900; 
+        line-height: 26.4px; 
+        //font-weight: 100;
+	    
+    } 
+
+    h2{ 
+        font-family: Jura; 
+        font-size: 18px; 
         font-style: normal; 
         font-variant: normal; 
         font-weight: 700; 
