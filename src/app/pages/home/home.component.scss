@@ -15,6 +15,14 @@ h2{
     background: $brand-secondary-light;
 }
 
+.text-primary{
+    color: $brand-primary;
+}
+
+.header-sub{
+    color: $brand-secondary-light;
+}
+
 .is-long{
     padding-bottom: 14em;
 }
@@ -25,4 +33,18 @@ h2{
 
 .projects{
     margin-top: -7.5%;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    width:auto
+  }
+.is-skill-icon{
+    height:48px;width:auto
+}
+
+.section.skills .box .content .columns .column p.list-title {
+    margin-top: 50px;
+    margin-bottom: 8px;
 }
