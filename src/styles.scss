@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+$brand-primary:#D41C20;
+$brand-primary-light:#AB483B;
+
+$brand-secondary:#10212F;
+$brand-secondary-light:#5B97B7;
+
+$brand-tertiary:#143730;
+
+
+.darkBackground{
+    background: $brand-secondary;
+}
+
+html{
+    h1{ 
+        font-family: Jura; 
+        font-size: 24px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 26.4px; 
+        //font-weight: 100;
+	    //font-family: Montserrat;
+    } 
+    
+    h3 { 
+        font-family: Jura; 
+        font-size: 14px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 15.4px; } 
+    p { 
+        font-family: Jura; 
+        font-size: 14px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 20px; 
+    } 
+    blockquote { 
+        font-family: Jura; 
+        font-size: 21px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 30px; } 
+    pre { 
+        font-family: Jura; 
+        font-size: 13px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 18.5714px; 
+    }
+}
