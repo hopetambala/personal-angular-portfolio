@@ -1,3 +1,20 @@
+@import '../../../styles.scss';
+
 .container{
     padding: 1mm;
+}
+
+a {
+    //background: $brand-secondary;
+   border-color: $brand-primary;
+   p{
+       color: $brand-primary;
+   }
+}
+
+.is-hovered{
+    border-color: $brand-secondary;
+    p{
+        color: $brand-secondary;
+    } 
 }
