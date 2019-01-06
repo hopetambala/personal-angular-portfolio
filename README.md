@@ -1,27 +1,16 @@
-# HopetambalaPortfolio
+# Porfolio Built with Angular + Bulma
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+## Stack
+![](https://img.shields.io/badge/angular_2+-✓-blue.svg)
 
-## Development server
+## About 
+This is my UX portfolio built in Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Angular Framework
 
-## Code scaffolding
+Angular is a TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of individuals and corporations. Those powerful capabilities are brought to Angular because it provides mobile-friendly `HTML`, `JS`, and `CSS` components to developers.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Bulma
 
-## Build
+[Bulma](https://bulma.io/) is a free, open source CSS framework based on Flexbox.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
