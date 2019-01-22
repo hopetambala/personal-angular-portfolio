@@ -52,3 +52,10 @@ ul {
 .is-spaced{padding:1rem 2rem}
 
 .logo{height:90px;width:auto;margin-bottom:1rem}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
