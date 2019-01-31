@@ -1,8 +1,8 @@
 <nav class="cd-vertical-nav">
   <ul>
     <li (click)="scroll(intro)"><a href="#intro"><span class="label">Intro</span></a></li>
-    <li (click)="scroll(problem)"><a href="#problem"><span class="label">Problem</span></a></li>
-    <li (click)="scroll(explore)"><a href="#explore"><span class="label">Explore</span></a></li>
+    <!--li (click)="scroll(problem)"><a href="#problem"><span class="label">Problem</span></a></li>
+    <li (click)="scroll(explore)"><a href="#explore"><span class="label">Explore</span></a></li-->
     <li (click)="scroll(takeaways)"><a href="#takeaways"><span class="label">Takeaways</span></a></li>
   </ul>
 </nav><!-- .cd-vertical-nav -->
@@ -26,7 +26,7 @@
         </div>
         <div class="column">
             <!--img  src="assets/portfolio/pcollaboration/Goals_macbookgold_front.png" style="padding-top:-10%"-->
-            <app-slideshow [items]='photos'></app-slideshow>
+            <app-slideshow [items]='photos' [height]="'500px'"></app-slideshow>
         </div>
       </div>
   
@@ -34,10 +34,14 @@
     
 </section>
   
-<section #problem class="section cd-section">
+<section #problem class="section cd-section is-small">
   <div class="container">
-    <h1 class="title">Framing the Problem</h1>
-    <div>
+    
+    <div class="columns level">
+        <h1 class="title" style="color:white">Framing the Problem</h1>
+        <p style="color:white">To address parking challenges during downtown construction, the city of Ferndale is piloting a program to provide rides to downtown. <br> This team will dive into ridesharing data and apply the design process to understand and suggest recommendations for mobility decisions</p>
+    </div>
+    <!--div>
       <h2 class="subtitle">
         Comparative Analysis
       </h2>
@@ -53,19 +57,23 @@
       <h2 class="subtitle">
         Focus Groups
       </h2>
-    </div>
+    </div>-->
     
   </div>
 </section>
 
+<!--
 <section #explore class="section cd-section" >
   <div class="container">
     <h1 class="title is-text-secondary-light">Explore Options</h1>
   </div>
-</section>
+</section> -->
 
-<section #takeaways class="section cd-section" >
+<section #takeaways class="section cd-section is-small" style="height:50%">
   <div class="container">
-    <h1 class="title is-text-secondary">Current Takeaways</h1>
+    <div class="columns level" style="color:white;">
+        <h1 class="title is-text-secondary" style="color:white">Current Takeaways</h1>
+        <p style="color:white">Currently conducting comparative analyses and focus groups!</p>
+    </div> 
   </div>
 </section>

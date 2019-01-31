@@ -1,0 +1,57 @@
+<nav class="cd-vertical-nav">
+    <ul>
+      <li (click)="scroll(intro)"><a href="#intro"><span class="label">Intro</span></a></li>
+      <li (click)="scroll(problem)"><a href="#problem"><span class="label">Problem</span></a></li>
+    </ul>
+  </nav><!-- .cd-vertical-nav -->
+  <section #intro class="hero is-info cd-section background" style="height:inherit">
+    <div class="hero-body">
+  
+      <div class="columns level" style='padding-left:5%;'>
+        <div class="column">
+          <h1 class="title">
+              Web Data Visualization Application
+          </h1>
+          <h2 class="subtitle">
+              A dashboard application that based on information collected in the data collection application. Designed for development practitioners and researchers (In Beta).
+          </h2>
+          <p class="is-text-secondary-light">
+            <strong>UX Designer + Software Developer</strong>
+          </p>
+        </div>
+        <div class="column">
+          <app-slideshow [items]='photos' [height]="'500px'"></app-slideshow>
+        </div>
+      </div>
+  
+    </div>
+    
+  </section>
+  
+  
+  <section #problem class="section cd-section is-small">
+    <div class="container">
+      <h1 class="title" style="margin-left:-2%">Framing the Problem</h1>
+      <div class='columns level' style="height: inherit;width: 110%">
+        <div>
+          <h2 class="subtitle" style="color:white">
+            <p style="font-size:50%;font-weight: bold">Quickly after developing the mobile application, I found that many users desired an accompanying	 data visualization application to make sense of the data that was being collected!</p> 
+            <p style="font-size:50%;font-weight: bold">While still in beta, this application has been useful in distilling information to make sense to people who need efficiency.</p> 
+            <p style="font-size:50%;font-weight: bold">To get a feel for the application, use the username "Test" and the password "test"</p>
+          </h2>
+
+          <!--Button-->
+          <div class='box has-text-centered' style="background: #10212F">
+              <a href='https://puente-angular.herokuapp.com/' target=''>
+              <div>
+                <h2 class="subtitle" style="color:white;">
+                    Link To the Web App
+                </h2>
+
+              </div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

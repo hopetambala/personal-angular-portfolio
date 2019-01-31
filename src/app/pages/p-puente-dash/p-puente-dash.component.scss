@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
-.background{
-    background: $brand-secondary;
+.background {
+    background: $brand-primary-light;
 }
 
 .is-text-secondary-light{
@@ -349,6 +349,39 @@ Primary style
       transform: translateX(-50%) translateY(-4.5em) scale(0.25);
     }
 
+    .cd-vertical-nav li:nth-of-type(5) a::after {
+      background-position: 0px 16px;
+      -webkit-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+      -moz-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+      -ms-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+      -o-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+      transform: translateX(-50%) translateY(-7.5em) scale(0.01);
+    }
+    .cd-vertical-nav li:nth-of-type(5) a::before {
+      -webkit-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+      -moz-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+      -ms-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+      -o-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+      transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+    }
+
+    .cd-vertical-nav li:nth-of-type(6) a::after {
+      background-position: 0px 32px;
+      -webkit-transform: translateX(-50%) translateY(-10.5em) scale(0.01);
+      -moz-transform: translateX(-50%) translateY(-10.5em) scale(0.01);
+      -ms-transform: translateX(-50%) translateY(-10.5em) scale(0.01);
+      -o-transform: translateX(-50%) translateY(-10.5em) scale(0.01);
+      transform: translateX(-50%) translateY(-10.5em) scale(0.01);
+    }
+    .cd-vertical-nav li:nth-of-type(6) a::before {
+      -webkit-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
+      -moz-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
+      -ms-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
+      -o-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
+      transform: translateX(-50%) translateY(-10.5em) scale(0.25);
+    }
+
+
     .cd-vertical-nav .label {
       display: block;
       /* Force Hardware Acceleration */
@@ -403,12 +436,23 @@ Primary style
     display: table;
     width: 100%;
     height: 100vh;
-    background: $brand-secondary-light;
-    color: $brand-secondary;
+    background: $brand-primary-light;
+    .title{
+      color: $brand-secondary-light;
+    }
+    .subtitle{
+      color: white;
+    }
   }
   .cd-section:nth-of-type(even) {
-    background-color: $brand-secondary;
-    color: $brand-secondary-light;
+    background-color: darken($brand-primary-light,15%);
+    
+    .title{
+      color: $brand-secondary-light;
+    }
+    .subtitle{
+      color: white;
+    }
   }
   
   

@@ -20,6 +20,7 @@ import { PCitizenComponent } from './pages/p-citizen/p-citizen.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { PPuenteAppComponent } from './pages/p-puente-app/p-puente-app.component';
+import { PPuenteDashComponent } from './pages/p-puente-dash/p-puente-dash.component';
 library.add(fas);
 
 
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'collaboration', component: PCollaborationComponent},
   { path: 'citizen', component: PCitizenComponent},
-  { path: 'puenteApp',component:PPuenteAppComponent}
+  { path: 'puenteApp',component:PPuenteAppComponent},
+  { path: 'puenteDash',component:PPuenteDashComponent}
 
 ];
 
@@ -41,7 +43,8 @@ const appRoutes: Routes = [
     PCitizenComponent,
     CarouselComponent,
     SlideshowComponent,
-    PPuenteAppComponent
+    PPuenteAppComponent,
+    PPuenteDashComponent
   ],
   imports: [
     BrowserModule,

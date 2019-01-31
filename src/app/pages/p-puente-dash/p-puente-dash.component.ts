@@ -1,26 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as $ from 'jquery';
-
 @Component({
-  selector: 'app-p-citizen',
-  templateUrl: './p-citizen.component.html',
-  styleUrls: ['./p-citizen.component.scss']
+  selector: 'app-p-puente-dash',
+  templateUrl: './p-puente-dash.component.html',
+  styleUrls: ['./p-puente-dash.component.scss']
 })
-export class PCitizenComponent implements OnInit {
-
+export class PPuenteDashComponent implements OnInit {
   photos: Array<any> = []
 
   constructor() { 
     this.photos = [
-      'assets/portfolio/pcitizen/ferndale.jpg',
-      'assets/portfolio/pcitizen/ferndale2.jpg',
-      'assets/portfolio/pcitizen/ferndale3.jpg',
+      'assets/portfolio/ppuentedash/final/imacFinalFront.png',
+      'assets/portfolio/ppuentedash/final/imacFinalLeft.png',
+      'assets/portfolio/ppuentedash/final/imacFinalRight.png',
     ]
   }
 
   ngOnInit() {
-    
     $(document).ready(function(){
       var	scrolling = false;
       var contentSections = $('.cd-section'),
