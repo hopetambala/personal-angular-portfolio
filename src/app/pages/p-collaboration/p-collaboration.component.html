@@ -24,7 +24,7 @@
         </p>
       </div>
       <div class="column">
-          <img  src="assets/portfolio/pcollaboration/Goals_macbookgold_front.png" style="padding-top:-10%">
+        <app-slideshow [items]='photos' [height]="'400px'"></app-slideshow>
       </div>
     </div>
 
@@ -35,59 +35,140 @@
 
 <section #problem class="section cd-section">
   <div class="container">
-    <h1 class="title">Framing the Problem</h1>
-    <h2 class="subtitle">
-      Competitive Analysis
-    </h2>
-    <h2 class="subtitle">
-      Data Analysis
-    </h2>
+    <h1 class="title" style="margin-left:-2%">Framing the Problem</h1>
+    <div class='columns level' style="height: inherit;width: 110%">
+      <div>
+        <h2 class="subtitle">
+          Competitive Analysis
+        </h2>
+        <p>
+          Here's a screenshot of a competitive analysis I had done to see which collaboration tools were the best on the market
+        </p>
+      </div>
+      
+      <div class="column">
+          <img src='assets/portfolio/pcollaboration/2_competitive_analysis.png'>
+      </div>
+      
+    </div>
   </div>
 </section>
 
 
-<section #explore class="section cd-section">
+<section #explore class="section cd-section is-small">
   <div class="container">
-    <h1 class="title">Explore Options</h1>
-    <h2 class="subtitle">
-      Brainstorming
-    </h2>
-    <h2 class="subtitle">
-      Sketching
-    </h2>
+    <h1 class="title" style="margin-left:0%">Explore Options</h1>
+    <div class='columns level' style="height: inherit;width: 110%">
+      <div class='column'>
+          <h2 class="subtitle">
+            Brainstorming & Sketching
+          </h2>
+          <p style="font-size: 100%; font-weight: bold; color: white">The 8 idea sketches provided me with an opportunity to examine multiple collaboration and productivity ideas and the 8 workflows forced me to work through these ideas to see why they worked and how they could inform my design. </p>
+
+          <p style="font-size: 100% ;font-weight: bold; color: white">These tools did present challenges, but most of them made sense with the process. 8 idea sketches revolving around an idea versus a technology can be hard especially when most of those ideas can’t be implemented in a mobile application. While the 8 workflows allowed me to see what interactions were important within those 8 idea sketches, they really didn’t assist me in the interactions I used for the application. The workflows taught me why the interactions mattered but didn’t actually inform me on how the project creation process should work. I mostly used outside information and user research to jump into those. </p>
+
+          <p style="font-size: 100% ;font-weight: bold; color: white">My initial sketches focused on beating existing tech and nonprofit solutions on the market based on the competitive analysis done which I quickly found to be an arduous task to accomplish. Collaborative tech solutions like Slack provide a Messaging app that brings all your communication together in one place and offers real-time messaging, archiving and search for modern teams. Productivity tech solutions like Trello utilize the concept of boards (which correspond to projects) and within boards, there are cards (which represent tasks). The cards contain lists which can be used to track the progress of a project or to simply categorize things. </p>
+
+          <p style="font-size: 100%; font-weight: bold; color: white">These initial sketches and brainstorming were useful because it allowed me to throw out two big conceptions. My first misconception was that since I was trying to build a nonprofit tool, I should be focusing on what nonprofits are doing and evolve their experiences. But this actually dulled my focus due to the vast world of NGOs and non-profits so I decided to focus on one aspect all non-profits have to do: create and manage projects. </p>
+      </div>
+      
+      <div class="column" style='transform: scale(.7);padding: 0%'>
+          <app-slideshow [items]='sketches' [height]="'800px'"></app-slideshow>
+      </div>
+    </div>
   </div>
 </section>
 
-<section #focus class="section cd-section">
+<section #focus class="section cd-section is-small">
   <div class="container">
-    <h1 class="title">Home in on one</h1>
-    <h2 class="subtitle">
-      Scenarios
-    </h2>
+    <h1 class="title" style="margin-left:-1%">Home in on one</h1>
+    <div class='columns level' style="height: 400px;width: 105%">
+      <div>
+        <h2 class="subtitle">
+            Personas
+        </h2>
+        <p style="font-size: 150%; font-weight: bold; color: white">Once I decided what I’d be focusing on and I whittle down my idea to collaborative project creation and management for nonprofits, I started building it back up by walking through scenarios with my personas. I had 3 important personas I wanted to consider for my prototype: Program Managers (PMs), Community Client-Partners (CCPs), and Researchers (Rs).</p>
+
+      </div>
+      
+      <div class="column" style='transform: scale(1);padding: 0%'>
+        <app-slideshow [items]='personas'[height]="'400px'"></app-slideshow>
+      </div>
+  </div>
     <h2 class="subtitle">
       Storyboards
     </h2>
   </div>
 </section>
 
-<section #prototype class="section cd-section">
+<section #prototype class="section cd-section is-small">
   <div class="container">
-    <h1 class="title">Finalize and share</h1>
-    <h2 class="subtitle">
-      Paper prototypes
-    </h2>
-    <h2 class="subtitle">
-      Sketch prototye
-    </h2>
+
+  
+  <h1 class="title" style="margin-left:-2%">Finalize and share</h1>
+  <div class='box has-text-centered' style="background: #D41C20">
+    <a href="https://photos.app.goo.gl/JgTF9YKPu88YSFAp9" target=''>
+    <div>
+      <h2 class="subtitle">
+          Paper prototype 1
+      </h2>
+      <p>
+        Here's a video of me (attempting) to describe my design in less than 5 minutes. 
+      </p>
+    </div>
+    </a>
   </div>
+  <div class='box has-text-centered' style="background: #D41C20">
+    <a href="https://photos.app.goo.gl/dyVaaQQzEL8YGJuo7" target=''>
+    <div>
+      <h2 class="subtitle">
+          Paper prototype 2
+      </h2>
+      <p>
+        Here's a video of me (attempting) to describe my design in less than 2 minutes! Long story short, it's hard!
+      </p>
+    </div>
+    </a>
+  </div>
+
+  <div class='box has-text-centered' style="background: #D41C20">
+    <a href="https://sketch.cloud/s/AJ82y/ygLKZaq/play" target=''>
+    <div>
+      <h2 class="subtitle">
+        Sketch prototype
+      </h2>
+      <p>
+        Here's the final design!
+      </p>
+    </div>
+    </a>
+  </div>
+</div>
 </section>
 
 <section #takeaways class="section cd-section">
   <div class="container">
     <h1 class="title">Key Takeaways</h1>
-    <h2 class="subtitle">
-      Number 1
-    </h2>
+    <div class="columns level">
+      <h2 class="subtitle column" style="width:200px">
+        Designing for nonprofit work is very different than designing for for-profit ventures
+      </h2>
+      <p style="font-size: 100%; font-weight: bold; color: white">One big misconception was to “beat” what the other tech solutions on the market were doing which actually impeded how I should design the project. By focusing on all the features other competitors had, I quickly realized that I would be just designing a “better” version of something that already exists and that doesn’t teach me anything. By throwing out the concept that I had to focus on software features and the “what”, I decided to focus on the “why”. Why did people like Slack and Trello and how can I transform that experience to accomplish goals within international development.</p> 
+    </div>
+    
+    <div class="columns level">
+      <h2 class="subtitle column" style="width:200px">
+        Focus on one great feature and iterate
+      </h2>
+      <p style="font-size: 100%; font-weight: bold; color: white">One big change I had to make was where to limit the program/project creation tool. The United Nations provided a framework for what our goals should be, which targets to hit within that goal, and how to measure progress to prove that work was done within our goals/targets. They don’t provide a framework to manage on-the-ground operations. Through personal experience and user research, I quickly realized that there ere way too many variables regarding management on the ground. With so many development strategies regarded as the “right” way to do development, I removed a feature that allowed you to manage the program after project creation, focusing on providing a framework to manage only the creation of projects. I also quickly realized that designing any sort of in-house chat room made less sense now. With chat solutions so plentiful, it made no sense to add another interface for people to have to check.</p>
+    </div>
+
+    <div class="columns level">
+        <h2 class="subtitle column" style="width:200px">
+          Relax
+        </h2>
+        <p style="font-size: 100%; font-weight: bold; color: white">Along every step of the way, I was always trying to find that idea that <strong>clicked</strong> and would solve all the pain-points I discovered in international civic tech. Not only was what ridiculous, it hindered me from thinking outside the box sometimes! This is something I'm beginning to realize as the software developer part of me is learning to accept the design process!</p>
+      </div>
   </div>
 </section>
 

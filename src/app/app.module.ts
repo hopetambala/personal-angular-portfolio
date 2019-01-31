@@ -8,18 +8,26 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import {SlideshowModule} from 'ng-simple-slideshow';
+
+
 import * as $ from 'jquery';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas} from '@fortawesome/free-solid-svg-icons';
 import { PCollaborationComponent } from './pages/p-collaboration/p-collaboration.component';
 import { PCitizenComponent } from './pages/p-citizen/p-citizen.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { PPuenteAppComponent } from './pages/p-puente-app/p-puente-app.component';
 library.add(fas);
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'collaboration', component: PCollaborationComponent},
-  { path: 'citizen', component: PCitizenComponent}
+  { path: 'citizen', component: PCitizenComponent},
+  { path: 'puenteApp',component:PPuenteAppComponent}
 
 ];
 
@@ -30,12 +38,17 @@ const appRoutes: Routes = [
     HomeComponent,
     FooterComponent,
     PCollaborationComponent,
-    PCitizenComponent
+    PCitizenComponent,
+    CarouselComponent,
+    SlideshowComponent,
+    PPuenteAppComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FontAwesomeModule // Add this
+    FontAwesomeModule,
+    Ng2CarouselamosModule,
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]

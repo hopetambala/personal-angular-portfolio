@@ -1,26 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as $ from 'jquery';
-
 @Component({
-  selector: 'app-p-citizen',
-  templateUrl: './p-citizen.component.html',
-  styleUrls: ['./p-citizen.component.scss']
+  selector: 'app-p-puente-app',
+  templateUrl: './p-puente-app.component.html',
+  styleUrls: ['./p-puente-app.component.scss']
 })
-export class PCitizenComponent implements OnInit {
-
+export class PPuenteAppComponent implements OnInit {
   photos: Array<any> = []
-
   constructor() { 
     this.photos = [
-      'assets/sample/sample.jpg',
-      'assets/sample/sample1.jpg',
-      'assets/sample/sample2.jpg'
+      'assets/portfolio/ppuenteapp/iphone1.png',
+      'assets/portfolio/ppuenteapp/iphone2.png',
+      'assets/portfolio/ppuenteapp/iphone3.png',
+      'assets/portfolio/ppuenteapp/iphone4.png',
+      'assets/portfolio/ppuenteapp/iphone5.png',
+      'assets/portfolio/ppuenteapp/android.png',
     ]
   }
 
   ngOnInit() {
-    
     $(document).ready(function(){
       var	scrolling = false;
       var contentSections = $('.cd-section'),

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
+import { SlideshowComponent } from '../../components/slideshow/slideshow.component';
 
 import * as $ from 'jquery';
 
@@ -9,8 +10,29 @@ import * as $ from 'jquery';
   styleUrls: ['./p-collaboration.component.scss']
 })
 export class PCollaborationComponent implements OnInit {
+  photos: Array<any> = []
+  sketches: Array<any> = []
+  personas: Array<any> = []
 
-  constructor() { }
+  constructor() { 
+    this.photos = [
+      'assets/portfolio/pcollaboration/Goals_macbookgold_front.png',
+      'assets/portfolio/pcollaboration/targets_macbookgold_front.png',
+      'assets/portfolio/pcollaboration/indicators_macbookgold_front.png'
+    ]
+
+    this.sketches = [
+      'assets/portfolio/pcollaboration/3_sketches.png',
+      'assets/portfolio/pcollaboration/3_2_sketchesW.png'
+    ]
+
+    this.personas = [
+      'assets/portfolio/pcollaboration/4_personas/pro_devPrac.png',
+      'assets/portfolio/pcollaboration/4_personas/pro_local.png',
+      'assets/portfolio/pcollaboration/4_personas/pro_researcher.png',
+      'assets/portfolio/pcollaboration/4_personas/anti_college.png'
+    ]
+  }
 
   ngOnInit() {
     $(document).ready(function(){

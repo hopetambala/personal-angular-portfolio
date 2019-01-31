@@ -1,0 +1,68 @@
+<nav class="cd-vertical-nav">
+    <ul>
+      <li (click)="scroll(intro)"><a href="#intro"><span class="label">Intro</span></a></li>
+      <li (click)="scroll(problem)"><a href="#problem"><span class="label">Problem</span></a></li>
+    </ul>
+  </nav><!-- .cd-vertical-nav -->
+  <section #intro class="hero is-info cd-section background" style="height:inherit">
+    <div class="hero-body">
+  
+      <div class="columns level" style='padding-left:5%;'>
+        <div class="column">
+          <h1 class="title">
+              iOS Mobile Data Collection Application
+          </h1>
+          <h2 class="subtitle">
+              A data collection application that automatically geolocates the surveyor. <br>Designed for development practitioners based on my experience as a Peace Corps Volunteer.
+          </h2>
+          <p class="is-text-secondary-light">
+            <strong>UX Designer + Software Developer</strong>
+          </p>
+        </div>
+        <div class="column">
+          <app-slideshow [items]='photos' [height]="'500px'"></app-slideshow>
+        </div>
+      </div>
+  
+    </div>
+    
+  </section>
+  
+  
+  <section #problem class="section cd-section is-small">
+    <div class="container">
+      <h1 class="title" style="margin-left:-2%">Framing the Problem</h1>
+      <div class='columns level' style="height: inherit;width: 110%">
+        <div>
+          <h2 class="subtitle" style="color:white">
+            <p style="font-size:50%;font-weight: bold">When I was a Peace Corps Volunteer, other volunteers and I used to be medical translators for american medical missions who would come down do the Dominican Republic. The more we worked with these groups, the more disheartened we became because they while they were passionate and willing, they were inefficient with their work; using paper records that would just end up in boxes that they wouldn't look at again</p> 
+            <p style="font-size:50%; font-weight: bold">Their work wasn't sustainable due to no user-research involved in the planning of initiatives.</p>
+            <p style="font-size:50%; font-weight: bold">I started Puente with other Peace Corps Volunteers to become tech consultants for nonprofits (providing an app for them to collect information that would be available for them and other groups) and social workers for the various communities being worked in(using the majority of money donated to us to do projects for communities with the data that is being collected)</p>
+          </h2>
+
+          <!--Button-->
+          <div class='box has-text-centered' style="background: #10212F">
+              <a href='https://itunes.apple.com/us/app/puente-data-collection/id1362371696?mt=8' target=''>
+              <div>
+                <h2 class="subtitle" style="color:white;">
+                    Link To the iOS App Store
+                </h2>
+              </div>
+              </a>
+          </div>
+
+          <!--Button-->
+          <div class='box has-text-centered' style="background: #10212F">
+              <a href='https://play.google.com/store/apps/details?id=com.puente.datacollection' target=''>
+              <div>
+                <h2 class="subtitle" style="color:white;">
+                    Link To the Google App Store
+                </h2>
+              </div>
+              </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
