@@ -11,11 +11,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import * as $ from 'jquery';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas} from '@fortawesome/free-solid-svg-icons';
+import { PCollaborationComponent } from './pages/p-collaboration/p-collaboration.component';
+import { PCitizenComponent } from './pages/p-citizen/p-citizen.component';
 library.add(fas);
 
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent}
+  { path: '', component: HomeComponent},
+  { path: 'collaboration', component: PCollaborationComponent},
+  { path: 'citizen', component: PCitizenComponent}
 
 ];
 
@@ -24,7 +28,9 @@ const appRoutes: Routes = [
     AppComponent,
     NavComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    PCollaborationComponent,
+    PCitizenComponent
   ],
   imports: [
     BrowserModule,
