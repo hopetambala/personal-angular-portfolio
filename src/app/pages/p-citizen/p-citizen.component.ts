@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import * as $ from 'jquery';
 
+declare var tableau: any;
+
 @Component({
   selector: 'app-p-citizen',
   templateUrl: './p-citizen.component.html',
@@ -11,11 +13,13 @@ export class PCitizenComponent implements OnInit {
 
   photos: Array<any> = []
 
+  viz: any;
+
   constructor() { 
     this.photos = [
       'assets/portfolio/pcitizen/ferndale.jpg',
       'assets/portfolio/pcitizen/ferndale2.jpg',
-      'assets/portfolio/pcitizen/ferndale3.jpg',
+      'assets/portfolio/pcitizen/ferndale3.jpg'
     ]
   }
 
