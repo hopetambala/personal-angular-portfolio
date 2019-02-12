@@ -28,6 +28,9 @@ export class HomeComponent implements OnInit {
       }, function() {
           $(this).removeClass('transition');
       });
+
+      $("#zip").delay(100).animate({ opacity: 1 }, 1000);​
+      $("#zip2").delay(200).animate({ opacity: 1 }, 1000);​
       
     });
 
