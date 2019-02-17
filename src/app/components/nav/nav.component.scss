@@ -1,9 +1,12 @@
 @import '../../../styles.scss';
 
-$pulse-time:2s;
+$pulse-time:3s;
 $pulse-radius:20px;
-$button-color:$brand-primary-light;
+$button-color:$brand-secondary;
 
+nav {
+    background-color: $brand-secondary;
+}
 .container{
     padding: 1em;
     text-align:center;
@@ -21,6 +24,9 @@ a {
    }
 }
 
+p{
+    color: white;
+}
 .is-hovered{
     border-color: $brand-secondary;
     p{
@@ -59,15 +65,22 @@ a {
     box-shadow: 2px 2px 0 $button-color;
 }
 
-
-.pulse-button{
-    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
-
-    -webkit-animation: pulse $pulse-time infinite cubic-bezier(0.66, 0, 0, 1);
-    -moz-animation: pulse $pulse-time infinite cubic-bezier(0.66, 0, 0, 1);
-    -ms-animation: pulse $pulse-time infinite cubic-bezier(0.66, 0, 0, 1);
-    animation: pulse $pulse-time infinite cubic-bezier(0.66, 0, 0, 1);
+.button{
+    background-color: $brand-secondary;
 }
+
+@media screen and (min-width: 700px){
+    .pulse-button{
+        //box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+        box-shadow: 0 0 0 0 $brand-secondary-light;
+    
+        -webkit-animation: pulse $pulse-time infinite cubic-bezier(0.66, 0, 0, 1);
+        -moz-animation: pulse $pulse-time infinite cubic-bezier(0.66, 0, 0, 1);
+        -ms-animation: pulse $pulse-time infinite cubic-bezier(0.66, 0, 0, 1);
+        animation: pulse $pulse-time infinite cubic-bezier(0.66, 0, 0, 1);
+    }
+}
+
 
 .pulse-button:hover {
   -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
