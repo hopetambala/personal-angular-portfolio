@@ -12,12 +12,21 @@
 
       <!--End-->
       <div class="navbar-end level">
-        <div class="navbar-item has-dropdown is-hoverable" style="margin-top:8%">
-            <a class="button buton is-large is-squared" href="#projects">
+        <div class="navbar-item">
+          <a class="button buton is-large is-squared" href="/timeline">
+          <!--span class="icon">
+            <i class="fas fa-download"></i>
+          </span-->
+          <span><p style="color:white;">Timeline</p></span>
+          </a>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable" style="margin-top:9%">
+            <a class="buton is-large is-squared" href="#projects">
               <span><p style="color:white;">Recent Work</p></span>
             </a>
-            <div class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="/collaboration">
+            <div class="navbar-dropdown is-boxed" style="background-color:white !important">
+              <a class="navbar-item" href="/collaboration" >
                 Project Collaboration Tool
               </a>
               <a class="navbar-item" href="/puenteApp">
@@ -31,6 +40,7 @@
               </a>
             </div>
         </div>
+
         <div class="navbar-item">
             <a class="button buton is-large is-squared pulse-button " href="https://drive.google.com/file/d/1BW_WeRe35YZ8GE47hLnEVPoapVz7BW2g/view" target="Resume">
             <!--span class="icon">
@@ -48,7 +58,7 @@
     <a href=''>
       <img class="is-96x96" src="assets/logo/logo.png" alt="Hope Tambala UX+Data" style="width:12.5%">
     </a>
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="basic" (click)="clickEvent()">
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="basic" (click)="clickEvent()" style="margin-left:15%">
       <span aria-hidden="true" style="color:white"></span>
       <span aria-hidden="true" style="color:white"></span>
       <span aria-hidden="true" style="color:white"></span>
@@ -56,6 +66,11 @@
   </div>
 
   <div id='basic' [ngClass]="status ? 'is-active' : 'nada'" class="navbar-menu" >
+    <div class="navbar-item" style="text-align: right">
+        <a class="button buton is-large " href="/timeline" style="padding-right: 0px">
+          <span><p style="color:white;">Timeline</p></span>
+        </a>
+      </div>
     <div class="navbar-item" style="text-align: right">
       <a class="button buton is-large " href="#projects" style="padding-right: 0px">
         <span><p style="color:white;">Recent Work</p></span>

@@ -1,5 +1,7 @@
 @import '../../../styles.scss';
 
+$brand-red : lighten(mix($brand-secondary-light,$brand-primary-alternate,50%),5%);
+
 
 h1{
     color: $brand-primary-light;
@@ -41,7 +43,7 @@ h2{
 u {
     text-decoration: underline;
     //text-decoration-color: rgb(215,0,82);
-    text-decoration-color: rgb(215,0,82);
+    text-decoration-color: $brand-red;
     text-decoration-skip: ink;
 }
 .is-long{
