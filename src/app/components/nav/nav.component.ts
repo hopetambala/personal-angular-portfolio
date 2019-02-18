@@ -8,6 +8,8 @@ import { faLeaf } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavComponent implements OnInit {
   mobile:boolean = false;
+  status: boolean = false;
+  
   constructor() { }
 
   ngOnInit() {
@@ -23,5 +25,9 @@ export class NavComponent implements OnInit {
       this.mobile = false;
     }
   }
+
+  clickEvent(){
+    this.status = !this.status;       
+}
 
 }
