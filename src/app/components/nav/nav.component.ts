@@ -18,7 +18,7 @@ export class NavComponent implements OnInit {
 
 
   check_if_mobile(){
-    if (window.screen.width < 1025) { // 768px portrait
+    if (window.screen.width <= 1084) { // 768px portrait
       this.mobile = true;
     }
     else{
@@ -28,6 +28,11 @@ export class NavComponent implements OnInit {
 
   clickEvent(){
     this.status = !this.status;       
-}
+  }
+
+  onResize(event) {
+    event.target.innerWidth;
+    this.check_if_mobile()
+  }
 
 }

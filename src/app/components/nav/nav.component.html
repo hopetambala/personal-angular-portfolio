@@ -1,4 +1,4 @@
-<nav *ngIf='mobile==false' class="navbar is-transparent" style="padding:1%">
+<nav (window:resize)="onResize($event)" *ngIf='mobile==false' class="navbar is-transparent" style="padding:1%">
   <div class='container level'>
       <!--Logo-->
       <div class="navbar-brand" >
@@ -53,7 +53,7 @@
   </div>
 </nav>
 
-<nav *ngIf='mobile' class="navbar is-transparent" style="padding:2%;margin-bottom: -1%">
+<nav (window:resize)="onResize($event)" *ngIf='mobile' class="navbar is-transparent" style="padding:2%;margin-bottom: -1%">
   <div class='navbar-brand'>
     <a href=''>
       <img class="is-96x96" src="assets/logo/logo.png" alt="Hope Tambala UX+Data" style="width:12.5%">
