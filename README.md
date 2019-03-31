@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/angular_2+-✓-blue.svg)
 
 ## About 
-This is my UX portfolio built in Angular
+This is my UX portfolio built in Angular 6
 
 ## Angular Framework
 
