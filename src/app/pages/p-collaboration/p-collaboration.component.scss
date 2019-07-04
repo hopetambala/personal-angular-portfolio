@@ -433,19 +433,21 @@ Primary style
   
   .cd-section {
     /* vertically align its content*/
-    display: table;
-    width: 100%;
-    height: 100vh;
+    //display: table;
+    //width: 100%;
+    height: inherit;
     background: $brand-primary-light;
     .title{
       color: $brand-secondary-light;
     }
     .subtitle{
       color: white;
+      font-weight: bolder;
     }
   }
   .cd-section:nth-of-type(even) {
     background-color: darken($brand-primary-light,15%);
+    height: inherit;
     
     .title{
       color: $brand-secondary-light;
@@ -457,11 +459,12 @@ Primary style
   
   
   .cd-section p {
-    margin: 1em auto 0;
+    //margin: 1em auto 0;
     line-height: 1.6;
     width: 90%;
     max-width: 680px;
-    color: rgba(234, 242, 227, 0.6);
+    //color: rgba(234, 242, 227, 0.6);
+    color: white;
   }
   @media only screen and (min-width: 800px) {
     .cd-section h1, .cd-section h2 {
@@ -485,6 +488,11 @@ Primary style
     width: 44px;
     height: 44px;
     //background: url(../img/cd-arrow-bottom.svg) no-repeat center center;
+  }
+  span {
+    margin: 2.5%;
+    position: relative;
+    //display: block;
   }
   
   /* -------------------------------- 

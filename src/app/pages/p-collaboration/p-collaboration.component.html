@@ -8,7 +8,7 @@
     <li (click)="scroll(takeaways)"><a href="#takeaways"><span class="label">Takeaways</span></a></li>
   </ul>
 </nav><!-- .cd-vertical-nav -->
-<section #intro class="hero is-info cd-section background">
+<section #intro class="hero is-info cd-section">
   <div class="hero-body">
 
     <div class="columns level" style='padding-left:5%;'>
@@ -33,80 +33,99 @@
 </section>
 
 
-<section #problem class="section cd-section">
-  <div class="container">
-    <h1 class="title" style="text-align: center; ">Framing the Problem</h1>
+<section #problem class="section cd-section columns is-centered is-multiline">
+
+    <h1 class="title is-full column" style="text-align: center; ">Framing the Problem</h1>
     <!--Problem Statement-->
-    <div class="columns level">
-      <h2 class="subtitle column" style="width:200px">
-        Problem Statement
-      </h2>
-      <p style="font-size: 100%; font-weight: bold; color: white">There are a variety of foreign development organizations that work in the 
-        international development space in a certain capacity. There are Service-Education organization that develop educational summer programs that bring students from the US to do service projects in Latin-American and Caribbean communities. There are foundations that conduct medical missions by surveying the medical problems of a community for a week or two searching for patients, and then treat those patients with pharmaceuticals, medical procedures, or surgeries. And there are a variety of development organizations that work in grassroots (bottom-up) development such as Peace Corps or bureaucratic (top-down) development such as United States Agency for International Development (USAID). 
-        
-        <br><br>These organizations address international development and humanitarian efforts in a variety of ways but could be more efficient. We’re designing a platform to facilitate easier collaboration amongst these organizations. </p>
-    </div>
-
-    <!--Competitive analysis-->
-    <div class='columns level' style="height: inherit;width: 110%">
-      <div class="column">
-        <h2 class="subtitle">
-          Competitive Analysis
-        </h2>
-        <p style="font-size: 100%; font-weight: bold; color: white">
-          Here's a screenshot of a competitive analysis I had done to see which collaboration tools were the best on the market. I chose Slack and Trello to analyze their features and see if there was something missing in both. I also analyzed some nonprofit groups to see where how a nonprofit collaboration tool would compare to normal nonprofit processes.
-        </p>
-      </div>
+    <p class="column is-full"style="font-size: 100%; font-weight: bold; color: white">There are a variety of foreign development organizations that work in the 
+      international development space in a certain capacity. There are Service-Education organization that develop educational summer programs that bring students from the US to do service projects in Latin-American and Caribbean communities. There are foundations that conduct medical missions by surveying the medical problems of a community for a week or two searching for patients, and then treat those patients with pharmaceuticals, medical procedures, or surgeries. And there are a variety of development organizations that work in grassroots (bottom-up) development such as Peace Corps or bureaucratic (top-down) development such as United States Agency for International Development (USAID). 
       
-      <div class="column">
-          <img src='assets/portfolio/pcollaboration/2_competitive_analysis.png'>
-      </div>
-      
-    </div>
-  </div>
+      <br><br>These organizations address international development and humanitarian efforts in a variety of ways but could be more efficient. We’re designing a platform to facilitate easier collaboration amongst these organizations. </p>
 </section>
 
+<section class="section cd-section columns" style="background-color:#10212F;">
+  
+  <div class="column">
+    <h3 class="subtitle">CHALLENGE</h3>
+    <p>Project Collaboration for Nonprofits is Hard</p>
+    <p style="font-size:100%;">Nonprofit resources aren’t being used efficiently due to less collaboration. This makes it so that people who are in need don’t get help.</p>
+  </div>
+  <div class="column ">
+    <h3 class="subtitle">SOLUTION</h3>
+    <p>A collaborative platform designed for humanitarian work</p>
+    <p style="font-size:100%;">I designed a platform to facilitate the creation of a project collaboratively, making it easier to work on the same project amongst multiple organizations.</p>
+  </div>
+  <div class="column level-item">
+    <h3 class="subtitle">SCOPE</h3>
+    <p style="font-size:125%;">
+      Brand System
+    </p>
+    <p style="font-size:125%;">
+      Interaction Design
+    </p>
 
-<section #explore class="section cd-section is-small">
-  <div class="container">
-    <h1 class="title" style="text-align: center;">Explore Options</h1>
-    <div class='columns level' style="height: inherit;width: 110%">
-      <div class='column'>
-          <h2 class="subtitle">
-            Brainstorming & Sketching
-          </h2>
-          <p style="font-size: 100%; font-weight: bold; color: white">The 8 idea sketches provided me with an opportunity to examine multiple collaboration and productivity ideas and the 8 workflows forced me to work through these ideas to see why they worked and how they could inform my design. </p>
+  </div>
 
-          <p style="font-size: 100% ;font-weight: bold; color: white">These tools did present challenges, but most of them made sense with the process. 8 idea sketches revolving around an idea versus a technology can be hard especially when most of those ideas can’t be implemented in a mobile application. While the 8 workflows allowed me to see what interactions were important within those 8 idea sketches, they really didn’t assist me in the interactions I used for the application. The workflows taught me why the interactions mattered but didn’t actually inform me on how the project creation process should work. I mostly used outside information and user research to jump into those. </p>
+</section>
+<section #competitiveAnalysis class="columns cd-section is-vcentered" style="margin-bottom:-12px">
+  <!--Competitive analysis-->
+  <div class="column is-half" style="margin-left:10%">
+      <h1 class="title">
+        Competitive Analysis
+      </h1>
+      <p style="font-size: 100%; font-weight: bold; color: white">
+        Here's a screenshot of a competitive analysis I had done to see which collaboration tools were the best on the market. I chose Slack and Trello to analyze their features and see if there was something missing in both. I also analyzed some nonprofit groups to see where how a nonprofit collaboration tool would compare to normal nonprofit processes.
+      </p>
+    </div>
+    <div class="column collaboration">
+        <img src='assets/portfolio/pcollaboration/2_competitive_analysis.png'>
+    </div>
+</section>
 
-          <p style="font-size: 100% ;font-weight: bold; color: white">My initial sketches focused on beating existing tech and nonprofit solutions on the market based on the competitive analysis done which I quickly found to be an arduous task to accomplish. Collaborative tech solutions like Slack provide a Messaging app that brings all your communication together in one place and offers real-time messaging, archiving and search for modern teams. Productivity tech solutions like Trello utilize the concept of boards (which correspond to projects) and within boards, there are cards (which represent tasks). The cards contain lists which can be used to track the progress of a project or to simply categorize things. </p>
-
-          <p style="font-size: 100%; font-weight: bold; color: white">These initial sketches and brainstorming were useful because it allowed me to throw out two big conceptions. My first misconception was that since I was trying to build a nonprofit tool, I should be focusing on what nonprofits are doing and evolve their experiences. But this actually dulled my focus due to the vast world of NGOs and non-profits so I decided to focus on one aspect all non-profits have to do: create and manage projects. </p>
+<section #exploreOptions class="columns cd-section is-vcentered" style="margin-bottom:-12px">
+    <div class="column collaboration">
+        <img src='assets/portfolio/pcollaboration/3_sketches.png'>
+    </div>
+    <div class="column is-half" style="margin-left:10%">
+        <h1 class="title">
+          Explore Options
+        </h1>
+        <p style="font-size: 100%; color: white">
+            The 8 idea sketches provided me with an opportunity to examine multiple collaboration and productivity ideas and the 8 workflows forced me to work through these ideas to see why they worked and how they could inform my design.<br> Initial sketches focused on beating existing tech and nonprofit solutions on the market based on the competitive analysis done, but  I quickly found to be an arduous task to accomplish.         </p>
       </div>
-      
-      <div class="column" style='transform: scale(.7);padding: 0%'>
+      <!--div class="column" style='transform: scale(.7);padding: 0%'>
           <app-slideshow [items]='sketches' [height]="'800px'"></app-slideshow>
-      </div>
+      </div-->
+      
+  </section>
+
+
+<section #define class="section cd-section ">
+    <div class="columns is-multiline is-centered">
+      <h1 class="title column is-full" style="text-align: center;">Define</h1>
+      <p class="column is-full ">Collaborative project creation and management for nonprofits requires 3 user types: Program Managers, Community Client-Partners, and Researchers.</p>
     </div>
-  </div>
 </section>
 
-<section #focus class="section cd-section" style="height:inherit">
-  <h1 class="title" style="text-align: center;">Home in on one</h1>
-  <div class="container" style='height: inherit'>
-    <div class='columns level' style="height: inherit;width: 105%">
-      <div>
+<section #personas class="columns cd-section is-centered is-multiline" style="margin-bottom:-12px">
+    <!--Competitive analysis-->
+    <div class="column is-full" style="text-align: center;">
         <h2 class="subtitle">
             Personas
         </h2>
-        <p style="font-size: 150%; font-weight: bold; color: white">Once I decided what I’d be focusing on and I whittle down my idea to collaborative project creation and management for nonprofits, I started building it back up by walking through scenarios with my personas. I had 3 important personas I wanted to consider for my prototype: Program Managers (PMs), Community Client-Partners (CCPs), and Researchers (Rs).</p>
-
       </div>
-      
-      <div class="column" style='transform: scale(1);padding: 0%'>
-        <app-slideshow [items]='personas'[height]="'400px'"></app-slideshow>
+      <div class="column is-one-third">
+        <img src='assets/portfolio/pcollaboration/4_personas/pro_devPrac.png'>
       </div>
-    </div>
+      <div class="column is-one-third">
+        <img src='assets/portfolio/pcollaboration/4_personas/pro_local.png'>
+      </div>
+      <div class="column is-one-third">
+        <img src='assets/portfolio/pcollaboration/4_personas/pro_researcher.png'>
+      </div>
+</section>
+<section #focus class="section cd-section" style="height:inherit">
+  <div>
     <div class='columns level' style="width: 105%">
       <div>
         <h2 class="subtitle">
