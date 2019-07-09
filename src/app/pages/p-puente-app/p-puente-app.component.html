@@ -2,6 +2,8 @@
     <ul>
       <li (click)="scroll(intro)"><a href="#intro"><span class="label">Intro</span></a></li>
       <li (click)="scroll(problem)"><a href="#problem"><span class="label">Problem</span></a></li>
+      <li (click)="scroll(prototyping)"><a href="#prototyping"><span class="label">Prototyping</span></a></li>
+      <li (click)="scroll(finalprototype)"><a href="#finalprototype"><span class="label">Final Prototype?</span></a></li>
     </ul>
   </nav><!-- .cd-vertical-nav -->
   <section #intro class="hero is-info cd-section background" style="height:inherit">
@@ -9,7 +11,7 @@
   
       <div class="columns level" style='padding-left:5%;'>
         <div class="column">
-          <h1 class="title">
+          <h1 class="title" style="color:#10212F">
               iOS Mobile Data Collection Application
           </h1>
           <h2 class="subtitle">
@@ -29,40 +31,109 @@
   </section>
   
   
-  <section #problem class="section cd-section is-small">
-    <div class="container">
-      <h1 class="title" style="margin-left:-2%">Framing the Problem</h1>
-      <div class='columns level' style="height: inherit;width: 110%">
-        <div>
-          <h2 class="subtitle" style="color:white">
-            <p style="font-size:50%;font-weight: bold">When I was a Peace Corps Volunteer, other volunteers and I used to be medical translators for american medical missions who would come down do the Dominican Republic. The more we worked with these groups, the more disheartened we became because they while they were passionate and willing, they were inefficient with their work; using paper records that would just end up in boxes that they wouldn't look at again</p> 
-            <p style="font-size:50%; font-weight: bold">Their work wasn't sustainable due to no user-research involved in the planning of initiatives.</p>
-            <p style="font-size:50%; font-weight: bold">I started Puente with other Peace Corps Volunteers to become tech consultants for nonprofits (providing an app for them to collect information that would be available for them and other groups) and social workers for the various communities being worked in(using the majority of money donated to us to do projects for communities with the data that is being collected)</p>
-          </h2>
+  <section #problem class="section cd-section columns is-centered is-multiline" >
+      <h1 class="title is-full column" style="text-align: center; ">Framing the Problem</h1>
+      <p class="column is-full"style="font-size: 100%; font-weight: bold; color: white">When I was a Peace Corps Volunteer, other volunteers and I used to be medical translators for American medical missions who would come down to the Dominican Republic. The more we worked with these groups, the more disheartened we became because they while they were passionate and willing, they were inefficient with their work; using paper records that would just end up in boxes that they wouldn't look at again.
+      <br/><br/>Their work wasn't sustainable due to no user-research involved in the planning of initiatives.
+      <br/><br/>I started Puente with other Peace Corps Volunteers to become tech consultants for nonprofits (providing an app for them to collect information that would be available for them and other groups) and social workers for the various communities being worked in(using the majority of money donated to us to do projects for communities with the data that is being collected)</p>
+      
+      <div class="columns is-centered" >
+        <!--Button-->
+        <a class="button is-large is-info is-outlined" style="margin: 5%" href='https://itunes.apple.com/us/app/puente-data-collection/id1362371696?mt=8' target=''>
+          Link To the iOS App Store
+        </a>
+        <!--Button-->
+        <a class="button is-large is-info is-outlined" style="margin: 5%" href='https://play.google.com/store/apps/details?id=com.puente.datacollection' target=''>
+          Link To the Google App Store
+        </a>
+      </div>
+      
+  </section>
 
-          <!--Button-->
-          <div class='box has-text-centered' style="background: #10212F">
-              <a href='https://itunes.apple.com/us/app/puente-data-collection/id1362371696?mt=8' target=''>
-              <div>
-                <h2 class="subtitle" style="color:white;">
-                    Link To the iOS App Store
-                </h2>
-              </div>
-              </a>
-          </div>
+  <section class="section cd-section columns" style="background-color:#10212F;">
+  
+    <div class="column">
+      <h3 class="subtitle">CHALLENGE</h3>
+      <p>Data Collection is paper-based for medical missions</p>
+      <p style="font-size:100%;">Nonprofit don't collect data that is easily interoperable with other data and is often paper-based. This makes it hard for data collected to have more than a one-time use</p>
+    </div>
+    <div class="column ">
+      <h3 class="subtitle">SOLUTION</h3>
+      <p>A data collection application designed for streamlined interoperable data</p>
+      <p style="font-size:100%;">I developed a mobile applicaiton to streamline data collection in developing countries by providing forms that adhere to data most organizations need to make an impact in a community</p>
+    </div>
+    <div class="column level-item">
+      <h3 class="subtitle">SCOPE</h3>
+      <p style="font-size:125%;">
+        Brand System
+      </p>
+      <p style="font-size:125%;">
+        Frontend Development
+      </p>
+      <p style="font-size:125%;">
+        Backend Development
+      </p>
+  
+    </div>
+  
+  </section>
 
-          <!--Button-->
-          <div class='box has-text-centered' style="background: #10212F">
-              <a href='https://play.google.com/store/apps/details?id=com.puente.datacollection' target=''>
-              <div>
-                <h2 class="subtitle" style="color:white;">
-                    Link To the Google App Store
-                </h2>
-              </div>
-              </a>
-          </div>
-          
-        </div>
+  <section #prototyping class="columns cd-section is-centered is-multiline" style="padding-bottom:24px">
+    <!--Competitive analysis-->
+    <div class="column is-full" style="text-align: center;">
+      <h1 class="subtitle">
+          Prototyping and Testing
+      </h1>
+    </div>
+    <div class="columns is-vcentered">
+      <div class="column is-half" style="margin-left:10%;">
+        <h1 class="title">
+          Version 1
+        </h1>
+        <p style="font-size: 100%; font-weight: bold; color: white;">
+          Version 1 of the application was very straightforward and was early in my frontend/mobile application career. Design choices we had to make were limited to development skill. What we learned from our research was that at a minimum we need A) the app to be bilingual and B) we needed a comprehensive list of questions.
+        </p>
+      </div>
+      <div class="column">
+        <img src='assets/portfolio/ppuenteapp/v1.gif' style="background: url('assets/portfolio/ppuenteapp/v1.gif');">
       </div>
     </div>
-  </section>
+    <div class="columns is-vcentered">
+      <div class="column is-half">
+        <img src='assets/portfolio/ppuenteapp/v3.gif' style="background: url(`assets/portfolio/ppuenteapp/v3.gif`);">
+      </div>
+      <div class="column" style="margin-left:-10%;">
+        <h1 class="title">
+          Version 3
+        </h1>
+        <p style="font-size: 100%; font-weight: bold; color: white">
+          Version 1 solved one of our problems. The underlying database that was being created for the information that was collected was exactly what we wanted. However, the user experience was very poor. Version 3 came with the clear goal of addressing the user's pain points with regards to the speed of data collection and enjoyability of the experience. Version 3 (yes we skipped 2 because there was a lot of prototyping and usability testing) was a hit with the users.
+        </p>
+      </div>
+    </div>
+</section>
+
+<section #finalprototype class="columns cd-section is-centered is-multiline" style="padding-bottom:24px">
+  <!--Competitive analysis-->
+  <div class="column is-full" style="text-align: center;">
+    <h1 class="subtitle">
+        Final Prototype?
+    </h1>
+  </div>
+  <div class="columns is-vcentered">
+    <div class="column is-half" style="margin-left:10%;">
+      <h1 class="title" style="color:#10212F">
+        Version 4 Beta
+      </h1>
+      <p style="font-size: 100%; font-weight: bold; color: white;">
+          Here at Puente, we're continually trying to make the app continually address the needs of its users while pushing for new features to push the envelope. As lead developer and designer, I continue to test and develop our application with new user-centric design choices in mind. Our beta version is available for testing so reach out if you want to be a part of changing the world, one design choice at a time.
+      </p>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <img src='assets/portfolio/ppuenteapp/v4.gif' style="background: url('assets/portfolio/ppuenteapp/v4.gif'); height: 700px !important;">
+    </div>
+    </div>
+  </div>
+  
+</section>
