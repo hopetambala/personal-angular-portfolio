@@ -21,6 +21,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { PPuenteAppComponent } from './pages/p-puente-app/p-puente-app.component';
 import { PPuenteDashComponent } from './pages/p-puente-dash/p-puente-dash.component';
+import { PConsultingComponent } from './pages/p-consulting/p-consulting.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 library.add(fas);
 
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
   { path: 'citizen', component: PCitizenComponent},
   { path: 'puenteApp',component:PPuenteAppComponent},
   { path: 'puenteDash',component:PPuenteDashComponent},
-  { path: 'timeline', component:TimelineComponent}
+  { path: 'timeline', component:TimelineComponent},
+  { path: 'consulting', component:PConsultingComponent}
 
 ];
 
@@ -47,6 +49,7 @@ const appRoutes: Routes = [
     SlideshowComponent,
     PPuenteAppComponent,
     PPuenteDashComponent,
+    PConsultingComponent,
     TimelineComponent
   ],
   imports: [
