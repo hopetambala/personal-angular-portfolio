@@ -1,5 +1,7 @@
 @import '../../../styles.scss';
 
+$section-color : darken(desaturate($brand-primary,20%),5%);
+
 .img{
   height: 20px
 }
@@ -405,9 +407,9 @@ Primary style
   .cd-section {
     /* vertically align its content*/
     height: inherit;
-    background: $brand-secondary-light;
+    background: $section-color;
     .title{
-      color: $brand-secondary-light;
+      color: $section-color;
     }
     .subtitle{
       color: white;
@@ -415,11 +417,11 @@ Primary style
     }
   }
   .cd-section:nth-of-type(even) {
-    background-color: darken($brand-secondary-light,15%);
+    background-color: darken($section-color,15%);
     height: inherit;
     
     .title{
-      color: $brand-secondary-light;
+      color: $section-color;
     }
     .subtitle{
       color: white;

@@ -1,0 +1,168 @@
+<nav class="cd-vertical-nav">
+  <ul>
+    <li (click)="scroll(intro)"><a href="#intro"><span class="label">Intro</span></a></li>
+    <li (click)="scroll(problem)"><a href="#problem"><span class="label">Problem</span></a></li>
+    <li (click)="scroll(define)"><a href="#define"><span class="label">Define</span></a></li>
+    <li (click)="scroll(takeaways)"><a href="#takeaways"><span class="label">Takeaways</span></a></li>
+  </ul>
+</nav><!-- .cd-vertical-nav -->
+<section #intro class="hero is-info cd-section background" style="height:inherit">
+  <div class="hero-body">
+
+    <div class="columns level" style='padding-left:5%;'>
+      <div class="column">
+        <h1 class="title" style="color:#10212F">
+          Software Development for Security Visualization
+        </h1>
+        <h2 class="subtitle">
+            Creating a user-centric notetaking feature for CRViz
+        </h2>
+        <p class="is-text-secondary-light">
+          <strong>UX Designer + Software Engineer</strong>
+        </p>
+      </div>
+      <div class="column">
+        <img src='assets/portfolio/iqt-crviz/crviz_intro.gif' style="background: url('assets/portfolio/iqt-crviz/crviz_intro.gif');">
+      </div>
+    </div>
+
+  </div>
+  
+</section>
+
+<section #problem class="section cd-section columns is-centered is-multiline" >
+    <h1 class="title is-full column" style="text-align: center; ">Framing the Problem</h1>
+    <p class="column is-full" style="font-size: 100%; font-weight: bold; color: white">After cyber operators have loaded their data into CRViz, they find interesting patterns or features within the data. Needing to communicate these insights to outside users is important.  People who aren't familiar with the data or even the underlying problem space your data exists within is common and it was a need to be addressed in CRViz</p>
+</section>
+
+<section #banner class="section cd-section columns banner" style="margin-bottom: 0%;">
+  <div class="column">
+    <h3 class="subtitle">CHALLENGE</h3>
+    <p>Security operators need to document insights</p>
+    <p style="font-size:100%;">By annotating the visualization, network controllers retain insights gathered from the dataset</p>
+  </div>
+  <div class="column ">
+    <h3 class="subtitle">SOLUTION</h3>
+    <p>Notetaking feature</p>
+    <p style="font-size:100%;">A notetaking feature that's embedded in the visualization and has the ability to have notes imported into and exported from the visualization</p>
+  </div>
+  <div class="column level-item">
+    <h3 class="subtitle">SCOPE</h3>
+    <p style="font-size:125%;">
+      UX Research
+    </p>
+    <p style="font-size:125%;">
+      Software Engineering
+    </p>
+
+  </div>
+
+</section>
+
+<section #overview class="section cd-section columns is-centered is-multiline" style="margin-bottom:0%">
+    <h1 class="title is-full column" style="text-align: center; ">
+      Overview
+    </h1>
+    <p class="column is-full" style="font-size: 100%; font-weight: bold; color: white">
+      CRViz is a browser-based visualization tool that uses JSON and an interactive
+      enclosure diagram to visualize networks. Built with React, Redux, and d3, it uses circle-
+      packing techniques to easily visualize over 10k nodes.
+    </p>
+
+    <p class="column is-full" style="font-size: 100%; font-weight: bold; color: white">
+      Notetaking as a feature isn't a new concept so I dove into researching how other products’ note-taking features function in an effort to incorporate sensible features from those into CRviz. 
+      <br><br>By understanding how users interact with those products, we can gain insight on required functionalities in our note-taking implementation. Identifying those features allows us to provide a user-centric experience that we can develop within our technical feasibility. 
+    </p>
+</section>
+
+<section #existingSolution class="section cd-section columns is-centered is-multiline" style="margin-bottom:0%">
+  <div class="column is-one-third" style="margin-left:10%">
+    <h1 class="subtitle">
+      Existing implementation
+    </h1>
+    <p style="font-size: 100%; font-weight: bold; color: white">
+      Here's CRViz before the notetaking feature was implemented. Using d3, we presented the information of each node with a mouseover event. This limited us to only being able to use d3 elements to interact with our visualization.
+      <br><br>We took the notetaking feature as an opportunity to abstract some d3 implementations into React giving us the flexibility to create a user-centric notes component.
+    </p>
+  </div>
+  <div class="column collaboration">
+      <img src='assets/portfolio/iqt-crviz/0_tooltip.gif' style="background: url('assets/portfolio/iqt-crviz/0_tooltip.gif');">
+  </div>
+</section>
+
+<section #researchgoals class="section cd-section columns" style="margin-bottom:0%">
+  <div class="column">
+    <h3 class="subtitle">GOAL 1</h3>
+    <p>Understand corecomponents/features required in a digital note-taking interface</p>
+  </div>
+  <div class="column">
+    <h3 class="subtitle">GOAL 2</h3>
+    <p>Understand the User-Interface architectures of comparative note-takingp roducts</p>
+  </div>
+</section>
+
+<section #comparativeProducts class="columns cd-section is-centered is-multiline" style="margin-bottom:0%">
+  <!--Competitive analysis-->
+  <div class="column is-full" style="text-align: center;">
+    <h1 class="subtitle">
+        Comparative Products
+    </h1>
+  </div>
+  <div class="columns is-vcentered" style="margin:24px;">
+    <div class="column" >
+      <h1 class="title">
+        Google Keep
+      </h1>
+      <p style="font-size: 100%; font-weight: bold; color: white;">
+        Google Keep provides a “post it” UI of note-taking with ability to create lists, draw on your notes, and create notes with images.
+      </p>
+    </div>
+    <div class="column">
+      <img src='assets/portfolio/iqt-crviz/1_keep.png' >
+    </div>
+  </div>
+  <div class="columns is-vcentered" style="margin:24px;">
+    <div class="column">
+      <img src='assets/portfolio/iqt-crviz/1_evernote.jpg'>
+    </div>
+    <div class="column" style="">
+      <h1 class="title">
+        Evernote
+      </h1>
+      <p style="font-size: 100%; font-weight: bold; color: white">
+        Evernote is application designed for note taking, organizing, task lists, and archiving. It’s centered around the idea of notes being gathered within notebooks.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section #newSolution class="section cd-section columns is-centered is-multiline" style="margin-bottom:0%">
+  <div class="column is-one-third" style="margin-left:10%">
+    <h1 class="subtitle">
+      New implementation
+    </h1>
+    <p style="font-size: 100%; font-weight: bold; color: white">
+      Our new note-taking feature moved a lot of functionality from d3 into React. This required a decent amount of re-engineering and plumbing via Redux. 
+    </p>
+  </div>
+  <div class="column collaboration">
+      <img src='assets/portfolio/iqt-crviz/0_note_taking.gif' style="background: url('assets/portfolio/iqt-crviz/0_note_taking.gif');">
+  </div>
+</section>
+
+<!--section #keyTakeaway class="section cd-section columns is-centered is-multiline" style="margin-bottom:0%">
+  <div class="column is-one-third" style="margin-left:10%">
+    <h1 class="subtitle">
+      New implementation
+    </h1>
+    <p style="font-size: 100%; font-weight: bold; color: white">
+      Our new note-taking feature moved a lot of functionality from d3 into React. This required a decent amount of re-engineering and plumbing via Redux. 
+    </p>
+  </div>
+  <div class="column collaboration">
+      <img src='assets/portfolio/iqt-crviz/0_note_taking.gif' style="background: url('assets/portfolio/iqt-crviz/0_note_taking.gif');">
+  </div>
+</section-->
+
+
+
