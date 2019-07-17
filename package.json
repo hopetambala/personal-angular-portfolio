@@ -18,7 +18,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/build-angular": "^0.801.0",  
+    "@angular-devkit/build-angular": "^0.801.0",
     "@angular/animations": "^8.1.0",
     "@angular/cdk": "^7.2.0",
     "@angular/cli": "^8.1.0",
@@ -43,8 +43,10 @@
     "jquery": "^3.3.1",
     "ng-simple-slideshow": "^1.2.7",
     "ng2-carouselamos": "^3.2.0",
+    "ngx-scrollreveal": "^3.0.0",
     "path": "^0.12.7",
     "rxjs": "~6.5.2",
+    "scrollreveal": "^4.0.5",
     "typescript": "~3.4.5",
     "zone.js": "~0.9.1"
   },

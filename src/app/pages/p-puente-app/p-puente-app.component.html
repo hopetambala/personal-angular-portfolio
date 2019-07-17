@@ -1,4 +1,4 @@
-<nav class="cd-vertical-nav">
+<nav class="cd-vertical-nav" [ngsRevealSet]="{ reset: false }" [ngsSelector]="'.column'">
     <ul>
       <li (click)="scroll(intro)"><a href="#intro"><span class="label">Intro</span></a></li>
       <li (click)="scroll(problem)"><a href="#problem"><span class="label">Problem</span></a></li>
@@ -85,8 +85,8 @@
         Prototyping and Testing
     </h1>
   </div>
-  <div class="columns is-vcentered">
-    <div class="column is-half" style="margin-left:10%;">
+  <div class="columns is-vcentered" style="margin: 50px">
+    <div class="column is-half" >
       <h1 class="title">
         Version 1
       </h1>
@@ -98,11 +98,11 @@
       <img src='assets/portfolio/ppuenteapp/v1.gif' style="background: url('assets/portfolio/ppuenteapp/v1.gif');">
     </div>
   </div>
-  <div class="columns is-vcentered">
+  <div class="columns is-vcentered" style="margin: 50px">
     <div class="column is-half">
       <img src='assets/portfolio/ppuenteapp/v3.gif' style="background: url(`assets/portfolio/ppuenteapp/v3.gif`);">
     </div>
-    <div class="column" style="margin-left:-10%;">
+    <div class="column" >
       <h1 class="title">
         Version 3
       </h1>
@@ -120,8 +120,8 @@
         Final Prototype?
     </h1>
   </div>
-  <div class="columns is-vcentered">
-    <div class="column is-half" style="margin-left:10%;">
+  <div class="columns is-vcentered" style="margin: 25px">
+    <div class="column is-half">
       <h1 class="title" style="color:#10212F">
         Version 4 Beta
       </h1>

@@ -1,4 +1,4 @@
-<nav class="cd-vertical-nav">
+<nav class="cd-vertical-nav" [ngsRevealSet]="{ reset: false }" [ngsSelector]="'.column'">
   <ul>
     <li (click)="scroll(intro)"><a href="#intro"><span class="label">Intro</span></a></li>
     <li (click)="scroll(problem)"><a href="#problem"><span class="label">Problem</span></a></li>

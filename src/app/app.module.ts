@@ -9,7 +9,9 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
-import {SlideshowModule} from 'ng-simple-slideshow';
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { NgsRevealModule } from 'ngx-scrollreveal';
+
 
 
 import * as $ from 'jquery';
@@ -60,7 +62,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FontAwesomeModule,
     Ng2CarouselamosModule,
-    SlideshowModule
+    SlideshowModule,
+    NgsRevealModule
   ],
   providers: [],
   bootstrap: [AppComponent]
