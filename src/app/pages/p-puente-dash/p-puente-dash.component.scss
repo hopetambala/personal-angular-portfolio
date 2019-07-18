@@ -1,11 +1,18 @@
 @import '../../../styles.scss';
 
-.background {
-    background: $brand-primary-light;
+$section-color : lighten(saturate($brand-secondary-light,20%),10%);
+$briefing-color: saturate($brand-secondary,20%);
+
+.img{
+  height: 20px
 }
 
-.is-text-secondary-light{
-    color: $brand-secondary-light;
+.banner{
+    background-color: $briefing-color !important;
+}
+
+.is-text-secondary{
+    color: $brand-secondary !important;
 }
 
 .row-eq-height {
@@ -349,39 +356,6 @@ Primary style
       transform: translateX(-50%) translateY(-4.5em) scale(0.25);
     }
 
-    .cd-vertical-nav li:nth-of-type(5) a::after {
-      background-position: 0px 16px;
-      -webkit-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
-      -moz-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
-      -ms-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
-      -o-transform: translateX(-50%) translateY(-7.5em) scale(0.01);
-      transform: translateX(-50%) translateY(-7.5em) scale(0.01);
-    }
-    .cd-vertical-nav li:nth-of-type(5) a::before {
-      -webkit-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
-      -moz-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
-      -ms-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
-      -o-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
-      transform: translateX(-50%) translateY(-7.5em) scale(0.25);
-    }
-
-    .cd-vertical-nav li:nth-of-type(6) a::after {
-      background-position: 0px 32px;
-      -webkit-transform: translateX(-50%) translateY(-10.5em) scale(0.01);
-      -moz-transform: translateX(-50%) translateY(-10.5em) scale(0.01);
-      -ms-transform: translateX(-50%) translateY(-10.5em) scale(0.01);
-      -o-transform: translateX(-50%) translateY(-10.5em) scale(0.01);
-      transform: translateX(-50%) translateY(-10.5em) scale(0.01);
-    }
-    .cd-vertical-nav li:nth-of-type(6) a::before {
-      -webkit-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
-      -moz-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
-      -ms-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
-      -o-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
-      transform: translateX(-50%) translateY(-10.5em) scale(0.25);
-    }
-
-
     .cd-vertical-nav .label {
       display: block;
       /* Force Hardware Acceleration */
@@ -433,22 +407,22 @@ Primary style
   
   .cd-section {
     /* vertically align its content*/
-    display: table;
-    width: 100%;
-    height: 100vh;
-    background: $brand-primary-light;
+    height: inherit;
+    background: $section-color;
     .title{
-      color: $brand-secondary-light;
+      color: $section-color;
     }
     .subtitle{
       color: white;
+      font-weight: bolder;
     }
   }
   .cd-section:nth-of-type(even) {
-    background-color: darken($brand-primary-light,15%);
+    background-color: darken($section-color,15%);
+    height: inherit;
     
     .title{
-      color: $brand-secondary-light;
+      color: $section-color;
     }
     .subtitle{
       color: white;
@@ -457,11 +431,12 @@ Primary style
   
   
   .cd-section p {
-    margin: 1em auto 0;
+    //margin: 1em auto 0;
     line-height: 1.6;
     width: 90%;
     max-width: 680px;
-    color: rgba(234, 242, 227, 0.6);
+    //color: rgba(234, 242, 227, 0.6);
+    color: white;
   }
   @media only screen and (min-width: 800px) {
     .cd-section h1, .cd-section h2 {

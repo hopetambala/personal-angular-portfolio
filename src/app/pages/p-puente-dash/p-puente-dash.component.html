@@ -9,7 +9,7 @@
   
       <div class="columns level" style='padding-left:5%;'>
         <div class="column">
-          <h1 class="title">
+          <h1 class="title is-text-secondary">
               Web Data Visualization Application
           </h1>
           <h2 class="subtitle">
@@ -19,8 +19,11 @@
             <strong>UX Designer + Software Developer</strong>
           </p>
         </div>
-        <div class="column">
+        <!--div class="column">
           <app-slideshow [items]='photos' [height]="'500px'"></app-slideshow>
+        </div-->
+        <div class="column is-half">
+          <img src='assets/portfolio/ppuentedash/currentProto.gif' style="background: url(`assets/portfolio/ppuentedash/currentProto.gif`);">
         </div>
       </div>
   
@@ -29,29 +32,98 @@
   </section>
   
   
-  <section #problem class="section cd-section is-small">
-    <div class="container">
-      <h1 class="title" style="margin-left:-2%">Framing the Problem</h1>
-      <div class='columns level' style="height: inherit;width: 110%">
-        <div>
-          <h2 class="subtitle" style="color:white">
-            <p style="font-size:50%;font-weight: bold">Quickly after developing the mobile application, I found that many users desired an accompanying	 data visualization application to make sense of the data that was being collected!</p> 
-            <p style="font-size:50%;font-weight: bold">While still in beta, this application has been useful in distilling information to make sense to people who need efficiency.</p> 
-            <p style="font-size:50%;font-weight: bold">To get a feel for the application, use the username "Test" and the password "test"</p>
-          </h2>
+  <section #problem class="section cd-section columns is-centered is-multiline" >
+    <h1 class="title is-full column is-text-secondary" style="text-align: center; ">Framing the Problem</h1>
+    <p class="column is-full" style="font-size: 100%; font-weight: bold; color: white">Quickly after developing the mobile application, I found that many users desired an accompanying data visualization application to make sense of the data that was being collected. We went through multiple iterations of the design and the development to make sure we delivered a product that complemented the mobile application.</p>
+</section>
 
-          <!--Button-->
-          <div class='box has-text-centered' style="background: #10212F">
-              <a href='https://github.com/hopetambala/puente-react-dashboard' target=''>
-              <div>
-                <h2 class="subtitle" style="color:white;">
-                    Link To the Web App
-                </h2>
+<section class="section cd-section columns" style="background-color:#10212F;margin-bottom: 0%;">
+  <div class="column">
+    <h3 class="subtitle">CHALLENGE</h3>
+    <p>Development practitioners need a digital interface to interact with their data</p>
+    <p style="font-size:100%;">Many of our clients needed a streamlined solution to manager their own data on the mobile application</p>
+  </div>
+  <div class="column ">
+    <h3 class="subtitle">SOLUTION</h3>
+    <p>Dashboard Web Application</p>
+    <p style="font-size:100%;">A React Application that provides automated data analysis</p>
+  </div>
+  <div class="column level-item">
+    <h3 class="subtitle">SCOPE</h3>
+    <p style="font-size:125%;">
+      UX Design
+    </p>
+    <p style="font-size:125%;">
+      Software Engineering
+    </p>
+  </div>
+</section>
 
-              </div>
-              </a>
-          </div>
-        </div>
-      </div>
+<section #lowfiprototyping class="columns cd-section is-centered is-multiline" style="padding-bottom:24px">
+  <!--Competitive analysis-->
+  <div class="column is-full" style="text-align: center;">
+    <h1 class="title is-text-secondary">
+        Low-Fidelity Prototyping 
+    </h1>
+  </div>
+  <div class="columns is-vcentered" style="margin: 50px">
+    <div class="column is-half" >
+      <h1 class="subtitle">
+        Balsamiq Mockup
+      </h1>
+      <p style="font-size: 100%; font-weight: bold; color: white;">
+        Balsamiq is a great tool for rapid prototyping and we found it useful in helping us set the <strong>information hierarchy</strong> of our application. With a dashboard required to do so many things for different users, we were able to sketch out a couple iterations fast and settle on this one.
+      </p>
     </div>
-  </section>
+    <div class="column">
+      <img src='assets/portfolio/ppuentedash/0_balsamiq.gif' style="background: url('assets/portfolio/ppuentedash/0_balsamiq.gif');">
+    </div>
+  </div>
+</section>
+
+<section #hifidelity class="columns cd-section is-centered is-multiline" style="margin-bottom:0%">
+  <!--Competitive analysis-->
+  <div class="column is-full" style="text-align: center;">
+    <h1 class="title is-text-secondary">
+        High-Fidelity Prototyping 
+    </h1>
+  </div>
+  <div class="columns is-vcentered" style="margin: 50px">
+    <div class="column is-half" >
+      <h1 class="subtitle">
+        Angular First Iteration
+      </h1>
+      <p style="font-size: 100%; font-weight: bold; color: white;">
+        When I first learned Ionic for the mobile application, I tried to leverage my knowledge and lessons learned from that to create an Angular Application. We soon found it to be very clunky for our needs and frankly pretty bloated.
+      </p>
+    </div>
+    <div class="column is-half">
+      <img src='assets/portfolio/ppuentedash/1_angularProto.gif' style="background: url(`assets/portfolio/ppuentedash/1_angularProto.gif`);">
+    </div>
+  </div>
+  <div class="columns is-vcentered" style="margin: 50px">
+    <div class="column is-half">
+      <img src='assets/portfolio/ppuentedash/currentProto.gif' style="background: url(`assets/portfolio/ppuentedash/currentProto.gif`);">
+    </div>
+    <div class="column" >
+      <h1 class="subtitle">
+        React Beta
+      </h1>
+      <p style="font-size: 100%; font-weight: bold; color: white">
+        After moving from Angular, I created a React prototype that played very well with our testers. While not finished, our users found the interface to be snappy and very modern looking. While this could've been accomplished in Angular probably, we found it easier to create and test UI kits in React.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section #takeaways class="section cd-section">
+  <div class="container">
+    <h1 class="title is-text-secondary" style="text-align: center;">Key Takeaways</h1>
+    <div class="columns level">
+      <h2 class="subtitle column" style="width:200px">
+        Never stop iterating and testing
+      </h2>
+      <p style="font-size: 100%; font-weight: bold; color: white">We are continually re-designing and developing this platform to match the needs of our users. The data collected from the mobile application is only as useful as the users ability to understand it and through the use of a dashboard, users are empowered to discover insights into their own data.</p> 
+    </div>
+  </div>
+</section>
