@@ -3,12 +3,12 @@
 $brand-red : lighten(mix($brand-secondary-light,$brand-primary-alternate,50%),5%);
 
 
-h1{
+.h1{
     color: $brand-primary-light;
     //color:white;
     font-weight: 900;
 }
-h2{
+.h2{
     //color: $brand-secondary-light;
     color:white;
 }
@@ -17,11 +17,23 @@ h2{
     background: $brand-secondary-light;
 }
 
+.image{
+    @media only screen and (max-width: 768px) {
+        width:50%;
+        display:block;
+        margin:auto;
+    }
+
+}
+
 .is-size-1-desktop{
     @media screen and (min-width: 900px) {
         font-size: 96px !important;
-    }
-    
+    }  
+}
+
+.is-size-5-desktop{
+    color: white;
 }
 .text-primary{
     color: $brand-primary;
