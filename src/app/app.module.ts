@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AboutPage } from './pages/about/about';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -31,6 +32,7 @@ library.add(fas);
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
+  { path: 'about', component: AboutPage},
   { path: 'collaboration', component: PCollaborationComponent},
   { path: 'citizen', component: PCitizenComponent},
   { path: 'puenteApp',component:PPuenteAppComponent},
@@ -46,6 +48,7 @@ const appRoutes: Routes = [
     AppComponent,
     NavComponent,
     HomeComponent,
+    AboutPage,
     FooterComponent,
     PCollaborationComponent,
     PCitizenComponent,
