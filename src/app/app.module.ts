@@ -25,7 +25,8 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { PPuenteAppComponent } from './pages/p-puente-app/p-puente-app.component';
 import { PPuenteDashComponent } from './pages/p-puente-dash/p-puente-dash.component';
 import { PConsultingComponent } from './pages/p-consulting/p-consulting.component';
-import { IQTNotetakingComponent } from './pages/iqt-note-taking/iqt-note-taking.component'
+import { IQTNotetakingComponent } from './pages/iqt-note-taking/iqt-note-taking.component';
+import { HealthStrongerComponent } from './pages/health-stronger/health-stronger.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 library.add(fas);
 
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
   { path: 'puenteDash',component:PPuenteDashComponent},
   { path: 'timeline', component:TimelineComponent},
   { path: 'consulting', component:PConsultingComponent},
-  { path: 'notetaking', component:IQTNotetakingComponent}
+  { path: 'notetaking', component:IQTNotetakingComponent},
+  { path: 'healthStronger', component:HealthStrongerComponent}
 
 ];
 
@@ -58,6 +60,7 @@ const appRoutes: Routes = [
     PPuenteDashComponent,
     PConsultingComponent,
     IQTNotetakingComponent,
+    HealthStrongerComponent,
     TimelineComponent
   ],
   imports: [
