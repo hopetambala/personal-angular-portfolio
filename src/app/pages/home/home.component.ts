@@ -32,7 +32,8 @@ export class HomeComponent implements OnInit {
       $("#zip").delay(100).animate({ opacity: 1 }, 2000);​
       $("#zip2").delay(300).animate({ opacity: 1 }, 2000);​
       $("#zip3").delay(500).animate({ opacity: 1 }, 2000);​
-      
+      $("#zip4").delay(700).animate({ opacity: 1 }, 2000);​
+      $("#zip5").delay(1000).animate({ opacity: 1 }, 2000);​
     });
 
     
